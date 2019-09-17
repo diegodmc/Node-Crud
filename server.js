@@ -1,9 +1,17 @@
 const express = require('express');
 
+const mongoose = require('mongoose');
+
+//Iniciando o app
 const app = express();
 
-app.get('/',(req, res) => {
+//Iniciando o DB
+mongoose.connect("mongodb:localhost:27017/nodepai", { useNewUrlParser: true });
 
-    res.send('Hello');
-});
+//Primeira Rota
+app.get('/',(req, res) => { 
+                            res.send('Hello!!');
+                          }
+       );
+
 app.listen(3001);
