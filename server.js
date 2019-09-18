@@ -4,28 +4,22 @@ const mongoose = require('mongoose');
 
 const requireDir = require('require-dir');
 
-//Iniciando o app
+const cors = require('cors');
+
 const app = express();
 
-//Iniciando o DB
-mongoose.connect("mongodb://localhost:27017/nodeapi", { 
-                                                      useNewUrlParser: true 
-                                                    }
-                );
+app.use(express.json());
 
+app.use(cors(/*aqui dentro quais dominios pode chamar, parametros de segurança*/ ));
+
+mongoose.connect(
+    "mongodb://localhost:27017/nodeapi",
+     {useNewUrlParser: true}
+
+);
 requireDir('./src/models');
 
-const Product = mongoose.model('Product');
+app.use("/api", require("./src/Router"));
 
-//Primeira Rota
-app.get('/',(req, res) => { 
-                           Product.create({
-                                            title: 'Node', 
-                                            description: 'Node JS',
-                                            url: 'https://nodejs.org/en/'
-                           });
-                            return res.send('Hello!!');
-                          }
-       );
 
 app.listen(3001);
