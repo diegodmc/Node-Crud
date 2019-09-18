@@ -22,25 +22,25 @@ Package:
  
 Step by step:
 
-* Install node and npm
-* Create directory empty
-* Inside directory: (npm init -y & npm install express)
+- Install node and npm
+- Create directory empty
+- Inside directory: (npm init -y & npm install express)
 
-* Install Git integrate VS Code											 
-* Create file server.js
-* CMD: node server.js
+- Install Git integrate VS Code											 
+- Create file server.js
+- CMD: node server.js
 
-* Install Docker
-* Install Kitematic
-* Create Image MongoDB
+- Install Docker
+- Install Kitematic
+- Create Image MongoDB
 
-* npm install mongoose
-* Create connection
-* npm install require-dir
+- npm install mongoose
+- Create connection
+- npm install require-dir
 
-* npm install --save-dev nodemon
-* CMD: npm run dev (start nodemon) instead: node server.js
-* Install insomnia
+- npm install --save-dev nodemon
+- CMD: npm run dev (start nodemon) instead: node server.js
+- Install insomnia
 
-* npm install mongoose-paginate
-* npm install cors
+- npm install mongoose-paginate
+- npm install cors
