@@ -20,27 +20,27 @@ Package:
  * cors
  * require-dir
  
- 
-Install node and npm
-Create directory empty
-Inside directory: npm init -y
-                  npm install express
+Step by step:
 
-Install Git integrate VS Code											 
-Create file server.js
-CMD: node server.js
+* Install node and npm
+* Create directory empty
+* Inside directory: (npm init -y & npm install express)
 
-Install Docker
-Install Kitematic
-Create Image MongoDB
+* Install Git integrate VS Code											 
+* Create file server.js
+* CMD: node server.js
 
-npm install mongoose
-Create connection
-npm install require-dir
+* Install Docker
+* Install Kitematic
+* Create Image MongoDB
 
-npm install --save-dev nodemon
-CMD: npm run dev (start nodemon) instead: node server.js
-Install insomnia
+* npm install mongoose
+* Create connection
+* npm install require-dir
 
-npm install mongoose-paginate
-npm install cors
+* npm install --save-dev nodemon
+* CMD: npm run dev (start nodemon) instead: node server.js
+* Install insomnia
+
+* npm install mongoose-paginate
+* npm install cors
